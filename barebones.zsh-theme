@@ -9,4 +9,4 @@ _fishy_path() {
 }
 
 local path_color='green'; [ $UID -eq 0 ] && path_color='red'
-PROMPT='%{$fg[blue]%}%m%{$reset_color%} %{$fg[$path_color]%}$(_fishy_path)%{$reset_color%} %(!.#.§) '
+PROMPT='%{$fg[blue]%}[%m]%{$reset_color%} %{$fg[$path_color]%}$(_fishy_path)%{$reset_color%} %(!.#.§) '
